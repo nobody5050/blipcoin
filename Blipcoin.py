@@ -16,6 +16,11 @@ class Block:
     sha.update(str(self.index) + 
                str(self.timestamp) + 
                str(self.data) + 
-               str(self.previous_hash))
+               str(self.previous_hash)
     return sha.hexdigest()
+               
+               def create_genesis_block():
+  # Manually construct a block with
+  # index zero and arbitrary previous hash
+  return Block(0, date.datetime.now(), "Genesis Block", "0")
 view raw
