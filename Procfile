@@ -1,1 +1,1 @@
-worker: python dexel.py
+worker: python blipcoin.py
